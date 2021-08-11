@@ -9,6 +9,8 @@ import Framework7React from "framework7-react";
 // Init F7-React Plugin
 Framework7.use(Framework7React);
 
+import "./css/styles.css";
+
 // Import Main App component
 import App from "./App";
 
