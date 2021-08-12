@@ -6,6 +6,12 @@
 
 @font-face {
     font-family: "GothamRounded";
+    src: url("./font/GothamRoundedBook.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "GothamRounded";
     src: url("./font/GothamRoundedMedium.ttf");
     font-weight: 500;
 }
@@ -20,7 +26,8 @@
     --f7-font-family: GothamRounded, sans-serif;
     --f7-page-bg-color: #f3f3ee;
     --f7-block-strong-bg-color: var(--f7-page-bg-color);
-    --f7-block-text-color: #555;
+    --f7-block-text-color: #616473
+;
 }
 
 body {
@@ -55,6 +62,7 @@ body {
 
 .day-number-text {
     margin: 0;
+    font-weight: 500;
     font-size: 3rem;
 }
 
@@ -65,11 +73,12 @@ body {
 
 .year-text {
     margin: 0;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .day-text {
     margin-right: 0;
     margin-left: auto;
     text-transform: uppercase;
+    font-weight: 500;
 }
