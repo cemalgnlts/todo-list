@@ -4,14 +4,16 @@
 
 [ToDo List by Goutham](https://dribbble.com/shots/2451888-ToDo-List)
 
-![](https://cdn.dribbble.com/users/825808/screenshots/2451888/todo.png?compress=1&resize=800x600)
+| Original | Current project view | 
+| -------- | -------------------- |
+| ![](https://cdn.dribbble.com/users/825808/screenshots/2451888/todo.png?compress=1&resize=800x600) | ![](assets/progress.png)
 
 ## Colors
 
 | Color Name        | Hex         |
 | ----------------- | ----------- |
-| Background        | **#f3f3ee** |
-| Header Text Color | **#616473** |
+| Background        | **#fff**    |
+| Foreground        | **#f0efea** |
 
 ## Font Family
 

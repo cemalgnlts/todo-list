@@ -31,7 +31,7 @@
     --f7-checkbox-active-color: #51e3a4;
     --f7-checkbox-inactive-color: #d7e6e1;
     --f7-checkbox-size: 24px;
-    --f7-checkbox-border-width: 3px;
+    --f7-checkbox-border-width: 3.5px;
     --f7-fab-bg-color: #51e3a4;
 }
 
@@ -57,8 +57,28 @@
     background: #5cd6a0;
 }
 
+.page-content {
+    background-color: #f0efea;
+    display: flex;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    max-width: 375px;
+    max-height: 675px;
+    margin: auto;
+    position: relative;
+    background-color: var(--f7-page-bg-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
 .margin-vertical-auto {
     margin: auto 0;
+}
+
+.position-relative {
+    position: relative;
 }
 
 .day-number-text {
@@ -105,4 +125,19 @@ i.icon.icon-checkbox {
   background-position: center;
   background-size: 50% 3px, 3px 50%; /*thickness = 2px, length = 50% (25px)*/
   background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:checked ~ .item-inner > .item-title {
+    color: #ccc;
+}
+
+.list .item-content {
+    padding-left: 0;
+    margin: var(--f7-typography-margin) 0;
+}
+
+@media (min-height: 675px) {
+    .fab-center-bottom {
+        bottom: calc(-32px);
+    }
 }

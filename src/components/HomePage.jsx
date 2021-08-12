@@ -13,15 +13,21 @@ import ListToDo from "./ListToDo";
 function HomePage() {
     return (
         <Page>
-            <Block inset>
-                <Header />
 
-                <ListToDo />
-            </Block>
+            <div className="main">
 
-            <Fab position="center-bottom" slot="fixed">
-                <div className="plus"></div>
-            </Fab>
+                <Block inset>
+                    <Header />
+
+                    <ListToDo />
+                </Block>
+
+                <Fab slot="fixed" position="center-bottom">
+                    <div className="plus"></div>
+                </Fab>
+
+            </div>
+
         </Page>
     );
 }

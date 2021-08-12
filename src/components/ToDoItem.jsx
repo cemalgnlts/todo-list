@@ -2,12 +2,12 @@ import React from "react";
 
 import { ListItem } from "framework7-react";
 
-function ToDoItem() {
+function ToDoItem({ title }) {
 
     return (
         <ListItem
-            title="Books"
-            value="Books"
+            title={title}
+            value={title}
             name="todo-radio"
             checkbox
         ></ListItem>
