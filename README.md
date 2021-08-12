@@ -6,7 +6,7 @@
 
 | Original | Current project view | 
 | -------- | -------------------- |
-| ![](https://cdn.dribbble.com/users/825808/screenshots/2451888/todo.png?compress=1&resize=800x600) | ![](assets/progress.png)
+| ![](https://cdn.dribbble.com/users/825808/screenshots/2451888/todo.png?compress=1&resize=1024x835) | ![](assets/progress.png)
 
 ## Colors
 
