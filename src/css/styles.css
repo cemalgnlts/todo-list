@@ -24,13 +24,15 @@
 
 :root {
     --f7-font-family: GothamRounded, sans-serif;
-    --f7-page-bg-color: #f3f3ee;
+    --f7-page-bg-color: #fff;
     --f7-block-strong-bg-color: var(--f7-page-bg-color);
     --f7-block-text-color: #616473;
-}
-
-body {
-    
+    --f7-list-bg-color: var(--f7-page-bg-color);
+    --f7-checkbox-active-color: #51e3a4;
+    --f7-checkbox-inactive-color: #d7e6e1;
+    --f7-checkbox-size: 24px;
+    --f7-checkbox-border-width: 3px;
+    --f7-fab-bg-color: #51e3a4;
 }
 
 .swatch_2 {
@@ -80,4 +82,27 @@ body {
     margin-left: auto;
     text-transform: uppercase;
     font-weight: 500;
+}
+
+div.list .item-title {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+i.icon.icon-checkbox {
+    order: 1;
+    border-radius: 50%;
+}
+
+.plus {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background:
+    linear-gradient(#49ba8c,#49ba8c) content-box,
+    linear-gradient(#49ba8c,#49ba8c) content-box,
+    #51e3a4;
+  background-position: center;
+  background-size: 50% 3px, 3px 50%; /*thickness = 2px, length = 50% (25px)*/
+  background-repeat: no-repeat;
 }
