@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "GothamRounded";
+    src: url("./font/GothamRoundedLight.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "GothamRounded";
+    src: url("./font/GothamRoundedMedium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "GothamRounded";
+    src: url("./font/GothamRoundedBold.ttf");
+    font-weight: 700;
+}
+
+:root {
+    --f7-font-family: GothamRounded, sans-serif;
+    --f7-page-bg-color: #f3f3ee;
+    --f7-block-strong-bg-color: var(--f7-page-bg-color);
+    --f7-block-text-color: #555;
+}
+
+body {
+    
+}
+
+.swatch_2 {
+    background: #d7e6e1;
+}
+.swatch_3 {
+    background: #51e3a4;
+}
+.swatch_4 {
+    background: #cfd0d5;
+}
+.swatch_5 {
+    background: #9ea0a6;
+}
+.swatch_6 {
+    background: #747981;
+}
+.swatch_7 {
+    background: #a9dac5;
+}
+.swatch_8 {
+    background: #5cd6a0;
+}
+
+.margin-vertical-auto {
+    margin: auto 0;
+}
+
+.day-number-text {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.month-text {
+    margin: 0;
+    font-weight: bold;
+}
+
+.year-text {
+    margin: 0;
+    font-weight: 300;
+}
+
+.day-text {
+    margin-right: 0;
+    margin-left: auto;
+    text-transform: uppercase;
+}
