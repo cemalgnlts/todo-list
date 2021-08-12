@@ -26,8 +26,7 @@
     --f7-font-family: GothamRounded, sans-serif;
     --f7-page-bg-color: #f3f3ee;
     --f7-block-strong-bg-color: var(--f7-page-bg-color);
-    --f7-block-text-color: #616473
-;
+    --f7-block-text-color: #616473;
 }
 
 body {
