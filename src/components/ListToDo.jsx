@@ -1,19 +1,22 @@
 import React from "react";
 
-import { List, ListItem } from "framework7-react";
+import { List, useStore } from "framework7-react";
 import ToDoItem from "./ToDoItem";
-
-const fakeItems = [
-    "Buy new sweatshirt",
-    "Begin promotional phase",
-    "Read an article",
-    "Try not to fall asleep",
-    "Watch 'Sherlock'",
-    "Begin QA for the product",
-    "Go for a walk"
-]
+import { store } from "../store";
 
 function ListToDo() {
+    const list = useStore("list");
+
+    const handleChange = ev => {
+        const target = ev.target;
+        const li = target.parentElement.parentElement;
+
+        store.dispatch("updateChecked", { 
+            id: li.id,
+            text: target.value,
+            checked: target.checked
+        });
+    }
 
     return (
         <List
@@ -21,13 +24,16 @@ function ListToDo() {
             noHairlinesBetween
         >
 
-        {fakeItems.map((txt, i) => (
-            <ToDoItem
-                slot="list"
-                key={i}
-                title={txt}
-            />
-        ))}
+            {list.map(itm => (
+                <ToDoItem
+                    slot="list"
+                    id={itm.id}
+                    key={itm.id}
+                    onChange={handleChange}
+                    checked={itm.checked}
+                    title={itm.text}
+                />
+            ))}
 
         </List>
     );

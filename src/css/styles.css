@@ -23,16 +23,22 @@
 }
 
 :root {
+
+    /* colors */
+    --color-primary: #51e3a4;
+
+    /* framework7 */
     --f7-font-family: GothamRounded, sans-serif;
     --f7-page-bg-color: #fff;
     --f7-block-strong-bg-color: var(--f7-page-bg-color);
     --f7-block-text-color: #616473;
     --f7-list-bg-color: var(--f7-page-bg-color);
-    --f7-checkbox-active-color: #51e3a4;
+    --f7-checkbox-active-color: var(--color-primary);
     --f7-checkbox-inactive-color: #d7e6e1;
     --f7-checkbox-size: 24px;
     --f7-checkbox-border-width: 3.5px;
-    --f7-fab-bg-color: #51e3a4;
+    --f7-fab-bg-color: var(--color-primary);
+    --f7-dialog-button-text-color: var(--f7-dialog-text-color);
 }
 
 .swatch_2 {
@@ -121,7 +127,7 @@ i.icon.icon-checkbox {
   background:
     linear-gradient(#49ba8c,#49ba8c) content-box,
     linear-gradient(#49ba8c,#49ba8c) content-box,
-    #51e3a4;
+    var(--color-primary);
   background-position: center;
   background-size: 50% 3px, 3px 50%; /*thickness = 2px, length = 50% (25px)*/
   background-repeat: no-repeat;
@@ -136,7 +142,15 @@ input[type="checkbox"]:checked ~ .item-inner > .item-title {
     margin: var(--f7-typography-margin) 0;
 }
 
-@media (min-height: 675px) {
+.md .dialog-button {
+    --f7-touch-ripple-color: #EEE;
+}
+
+.dialog-button.dialog-button-bold {
+    color: #49ba8c;
+}
+
+@media (min-height: 750px) {
     .fab-center-bottom {
         bottom: calc(-32px);
     }
