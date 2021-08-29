@@ -7,7 +7,7 @@
 <table width="100%">
   <tr>
     <td>Original</td>
-    <td>Current project view</td>
+    <td>Current project view: <a href="https://cemalgnlts.github.io/todo-list">cemalgnlts.github.io/todo-list</a></td>
   </tr>
   <tr>
     <td width="50%">
@@ -18,6 +18,7 @@
     </td>
   </tr>
 </table>
+
 
 ## Colors
 
