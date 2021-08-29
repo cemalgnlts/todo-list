@@ -23,12 +23,15 @@
 }
 
 :root {
-
     /* colors */
     --color-primary: #51e3a4;
 
+    /* variable */
+    --list-vertical-margin: var(--f7-list-margin-vertical) * 2;
+
     /* framework7 */
     --f7-font-family: GothamRounded, sans-serif;
+    /* --f7-fab-size: 72px; */
     --f7-page-bg-color: #fff;
     --f7-block-strong-bg-color: var(--f7-page-bg-color);
     --f7-block-text-color: #616473;
@@ -79,6 +82,15 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.main > .block.inset {
+    height: calc(100% - var(--f7-block-margin-vertical) * 2);
+}
+
+.list {
+    height: calc(100% - 72px - var(--list-vertical-margin));
+    overflow: scroll;
+}
+
 .margin-vertical-auto {
     margin: auto 0;
 }
@@ -121,16 +133,9 @@ i.icon.icon-checkbox {
 }
 
 .plus {
-  display: inline-block;
-  width: 42px;
-  height: 42px;
-  background:
-    linear-gradient(#49ba8c,#49ba8c) content-box,
-    linear-gradient(#49ba8c,#49ba8c) content-box,
-    var(--color-primary);
-  background-position: center;
-  background-size: 50% 3px, 3px 50%; /*thickness = 2px, length = 50% (25px)*/
-  background-repeat: no-repeat;
+    width: 22px;
+    height: auto;
+    color: #49ba8c;
 }
 
 input[type="checkbox"]:checked ~ .item-inner > .item-title {
@@ -150,7 +155,15 @@ input[type="checkbox"]:checked ~ .item-inner > .item-title {
     color: #49ba8c;
 }
 
+.fab a {
+    --f7-touch-ripple-color: #EEE;
+}
+
 @media (min-height: 750px) {
+    .list {
+        --list-vertical-margin: var(--f7-list-margin-vertical);
+        margin-bottom: 0;
+    }
     .fab-center-bottom {
         bottom: calc(-32px);
     }
